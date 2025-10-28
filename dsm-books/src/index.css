@@ -1,0 +1,116 @@
+/* ===== Reset e fonte ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+  background-color: #1976d2;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+/* ===== CONTEÚDO ===== */
+main, div {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* ===== TÍTULO ===== */
+h1, h2 {
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-align: left;
+  color: #212121;
+}
+
+/* ===== LISTA DE LIVROS ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 1.5;
+}
+
+li strong {
+  display: block;
+  font-size: 16px;
+  color: #0d47a1;
+  margin-bottom: 4px;
+}
+
+li em {
+  font-size: 13px;
+  color: #666;
+}
+
+/* ===== FILTRO DE DISCIPLINA ===== */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+  border-color: #1976d2;
+}
+
+button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1256a3;
+}
