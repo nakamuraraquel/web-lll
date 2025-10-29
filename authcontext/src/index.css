@@ -1,0 +1,96 @@
+/* ===== Estilo base ===== */
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #e3f2fd 0%, #e0e7ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* ===== Container principal ===== */
+.login-container,
+.dashboard-container {
+  background: #ffffff;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 380px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-container:hover,
+.dashboard-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== Título ===== */
+h1 {
+  color: #7a1e8a;
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+
+/* ===== Inputs ===== */
+input {
+  display: block;
+  width: 100%;
+  margin: 12px 0;
+  padding: 12px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+
+input:focus {
+  border-color: #e33bf6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+/* ===== Botão ===== */
+button {
+  background: linear-gradient(90deg, #9f3bf6, #c725eb);
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  width: 100%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ac25eb, #a91dd8);
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* ===== Texto secundário ===== */
+p {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+}
+
+/* ===== Links ===== */
+a {
+  color: #c025eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
