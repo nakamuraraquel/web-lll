@@ -1,4 +1,4 @@
 # Instruções para a prova3:
 
 npm i <br>
-nmp run dev
+npm run dev
